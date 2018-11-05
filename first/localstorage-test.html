@@ -1,0 +1,9 @@
+<!doctype html>
+<body>
+	<script>
+		const iframe = document.createElement('iframe');
+		const origin = location.origin.indexOf('https') === 0 ? 'http://' + location.host : 'https://' + location.host;
+		iframe.src = origin + '/third/localstorage-iframe.html';
+		document.body.appendChild(iframe);
+	</script>
+</body>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<body>
+	<h1>This is Third</h1>
+	<p>LocalStorage ID:<span id="localstorage-id"></span></p>
+	<script>
+		let localstorageId = localStorage.getItem('localstorage-id');
+		if (!localstorageId) {
+			id = Math.random();
+			localstorageId.setItem('localstorage-id', id);
+		}
+
+		const element = document.getElementById('localstorage-id');
+		element.innerText = localstorageId;
+	</script>
+</body>
+</html>
