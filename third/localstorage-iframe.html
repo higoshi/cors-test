@@ -7,7 +7,7 @@
 		let localstorageId = localStorage.getItem('localstorage-id');
 		if (!localstorageId) {
 			id = Math.random();
-			localstorageId.setItem('localstorage-id', id);
+			localStorage.setItem('localstorage-id', id);
 		}
 
 		const element = document.getElementById('localstorage-id');
