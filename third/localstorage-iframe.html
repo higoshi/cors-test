@@ -6,8 +6,8 @@
 	<script>
 		let localstorageId = localStorage.getItem('localstorage-id');
 		if (!localstorageId) {
-			id = Math.random();
-			localStorage.setItem('localstorage-id', id);
+			localstorageId = Math.random();
+			localStorage.setItem('localstorage-id', localstorageId);
 		}
 
 		const element = document.getElementById('localstorage-id');
